@@ -48,7 +48,7 @@
 						$phases[$phaseIndex] .= abs($output % 10);
 					}
 				}
-				
+
 				var_dump( substr(end($phases), 0, 8) );
 			?>
 		</div>

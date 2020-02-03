@@ -33,7 +33,7 @@ class Welcome extends MY_Controller {
 			-1
 		);
 		$this->data['phasecount'] = 100;
-		$this->data['page'] = 'day/18';
+		$this->data['page'] = 'day/16';
 		$this->load->view('inc/template', $this->data);
 	}
 }
