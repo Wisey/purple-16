@@ -26,6 +26,13 @@ class Welcome extends MY_Controller {
 	public function index(){
 		$input_file = APPPATH."../demo/input.txt";
 		$this->data['chars'] = $this->file_model->load($input_file);
+		$this->data['pattern'] = array(
+			0,
+			1,
+			0,
+			-1
+		);
+		$this->data['phasecount'] = 100;
 		$this->data['page'] = 'day/18';
 		$this->load->view('inc/template', $this->data);
 	}
