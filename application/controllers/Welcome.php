@@ -32,6 +32,7 @@ class Welcome extends MY_Controller {
 			0,
 			-1
 		);
+		$this->data['input_repeat'] = 10000;
 		$this->data['phasecount'] = 100;
 		$this->data['page'] = 'day/16';
 		$this->load->view('inc/template', $this->data);
